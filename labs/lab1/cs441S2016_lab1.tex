@@ -108,11 +108,20 @@ attempt to have the {\tt FactorizationSocketClient} connect to it. For now, you 
 same computational node. Once you have gotten the client-server communication to work correctly, record the output of
 the client and the server to demonstrate that they are working. If you are interested in exploring this further, please
 try to run the client on the computer of one partner and the server on the computer of another. Students should be aware
-that, depending on their setup, they may need to improve these two Java classes to fully support remote communication.
+that, depending on their setup, they may need to enhance these two Java classes to fully support remote communication.
+
+Finally, you will notice that the {\tt FactorizationSocketClient} and {\tt FactorizationSocketServer} have some
+``hard-coded'' values in them. For instance, the port on which socket communication takes place can only be defined if a
+programmer changes the value in the source code and recompiles the Java class. Since this is not ideal from either a
+usability or an experimentation perspective, you and your partner should revise the source code so that it accepts
+command-line arguments for any values that you deem to be configurable by the user. While you may use the {\tt args[]}
+array to accept these parameters, students are encouraged to consider the use of the JCommander library available at
+\url{http://jcommander.org/}. Please see the instructor with questions about this task.
 
 \section*{Implementing a Benchmarking Framework}
 
-
+Now, you and your partner should study the code for the {\tt LSSocketClient} and the {\tt LSSocketServer} --- these Java
+classes will serve as the start of a simple benchmarking framework that you and your partner will implement.
 
 \section*{Conducting an Experimental Evaluation}
 
