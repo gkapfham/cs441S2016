@@ -10,15 +10,15 @@
 
 \section*{Introduction}
 
-The ability to implement and evaluate software that supports communication between client and a server is a crucial
+The ability to implement and evaluate software that supports communication between a client and a server is a crucial
 laboratory skill that will support further work in the field of distributed systems. In this laboratory assignment, you
-will use two programs that perform client-server communication through the use of a ``socket'' in the Java programming
-language. Additionally, you will implement three programs that will support the experimental evaluation of the
-performance of using sockets for client-server communication on a single host. Finally, using either Markdown or the
-\LaTeX~text formatting languages, you will write a detailed scientific report explaining the performance results that
-you identified during the completion of this assignment. You will complete this project by working with a partner; you
-and your partner will collaborate through a dedicated Slack channel and a Git version control repository throughout the
-week during which you finish this assignment.
+will use several programs that perform client-server communication through the use of a ``socket'' in the Java
+programming language. Additionally, you will implement three programs that will support the experimental evaluation of
+the performance of using sockets for client-server communication on a single host. Finally, using either Markdown or the
+\LaTeX~text formatting language, you will write a detailed scientific report explaining the performance results that you
+identified while finishing this assignment. You will complete this project by working with a partner; you and your
+partner will collaborate through a dedicated Slack channel and a Git version control repository throughout the week
+during which you finish this assignment.
 
 \section*{Review Your Textbook}
 
@@ -41,7 +41,7 @@ to ensure that each of you is able to successfully complete each of the steps ou
 
 \begin{enumerate}
 
-  \item If you do not already have a Bitbucket account, then please go to the Bitbucket Web site and create one---make sure
+  \item If you do not already have a Bitbucket account, then please go to the Bitbucket Web site and create one --- make sure
     that you use your {\tt allegheny.edu} email address so that you can create an unlimited number of free Bitbucket
     repositories while you are a student.
 
@@ -52,17 +52,17 @@ to ensure that each of you is able to successfully complete each of the steps ou
     passphrase if you do).   Type {\tt man ssh-keygen} and talk with your partner to learn more about this program.
     What files does {\tt ssh-keygen} produce?  Where does this program store these files by default?
 
-    Once you and your partner have created your ssh keys, you should raise your hand to invite either a teaching
-    assistant or the course instructor to help you with the next steps. First, you must log into Bitbucket and look in the
-    right corner for an account avatar with a down arrow.  Click on this blue link and then select the ``Manage
-    account'' option. Now, scroll down until you found the ``SSH keys'' option and upload your ssh key to Bitbucket. You
-    can copy your SSH key by going to the terminal and typing ``{\tt cat \textasciitilde{}/.ssh/id\_rsa.pub}'' command.
+    Once you and your partner have created your ssh keys, you should, if necessary, raise your hand to invite the course
+    instructor to help you with the next steps. First, you must log into Bitbucket and look in the right corner for an
+    account avatar with a down arrow.  Click on this blue link and then select the ``Manage account'' option. Now,
+    scroll down until you find the ``SSH keys'' option and upload your ssh key to Bitbucket. You can copy your SSH key
+    by going to the terminal and typing ``{\tt cat \textasciitilde{}/.ssh/id\_rsa.pub}'' command.
 
   \item Now, you need to test to see if you can authenticate with the Bitbucket servers.  First, show the course
     instructor that you have correctly configured your Bitbucket account.  Now, ask your instructor to share the
     course's Git repository with you.  Open a terminal window on your workstation and change into the directory where
     you will store your files for this course.  If needed, you can open a terminal window and type the command ``{\tt
-      mkdir cs441S2016}'' you could make a {\tt cs441S2016/} directory that will contain the Git repository that the
+      mkdir cs441S2016}'', thus making a {\tt cs441S2016/} directory that will contain the Git repository that the
       instructor will always use to share files with you.  Once you have done so and, additionally, asked the course
       instructor to share this repository with you, please type the following command ``{\tt git clone
       git@bitbucket.org:gkapfham/cs441s2016-share.git}''.
