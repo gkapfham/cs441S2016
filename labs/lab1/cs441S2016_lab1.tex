@@ -93,7 +93,22 @@ to ensure that each of you is able to successfully complete each of the steps ou
 
 \section*{Exploring Client-Server Communication}
 
+Please find the {\tt labs/lab1/} directory in our course's repository and work with your partner to study and understand
+the source code for the files called {\tt FactorizationSocketClient} and {\tt FactorizationSocketServer}. What are the
+key aspects of how these two Java classes support client-server communication? For instance, you will notice that these
+Java classes specify items like a ``host'' and a ``port'' --- what are the meanings of these terms? Can you draw a
+technical diagram that illustrates the general interaction between a client and a server, customized for these two
+classes that uses sockets? Please see the instructor if you have questions about these issues.
 
+You and your partner should work together to fully comment all of the source code in these two Java classes, making sure
+that you correctly explain how all of the methods and lines of code work. If you consult online references to support
+the development of your comments, then please include a reference to those sources in the comments. Once you have
+finished compiling these two classes, please run the {\tt FactorizationSocketServer} in one terminal window and then
+attempt to have the {\tt FactorizationSocketClient} connect to it. For now, you should run both of these programs on the
+same computational node. Once you have gotten the client-server communication to work correctly, record the output of
+the client and the server to demonstrate that they are working. If you are interested in exploring this further, please
+try to run the client on the computer of one partner and the server on the computer of another. Students should be aware
+that, depending on their setup, they may need to improve these two Java classes to fully support remote communication.
 
 \section*{Implementing a Benchmarking Framework}
 
