@@ -128,12 +128,26 @@ partner, you should implement six additional Java classes respectively called, {
 SLSocketServer}, {\tt SSSocketClient}, {\tt SSSocketServer}, {\tt LLSocketClient}, and {\tt LLSocketServer}. As you are
 implementing all of these Java classes make sure that the ways in which these clients and servers interact adhere to the
 names that you have assigned to the classes. Overall, these programs will enable you to establish some ``baseline''
-measurements for the cost of performing client-server communication on a single computer.
+measurements for the cost of performing client-server communication on a single computer. Next, you and your partner
+should implement one final program that is more like the {\tt FactorizationSocketClient} and {\tt
+FactorizationSocketServer} --- that is, it should perform some type of ``useful'' computation on the server whenever the
+client makes the appropriate request.
 
 As you are creating your programs, make sure that you give them command-line arguments that will effectively support
 running experiments and collecting data about the response time of the client-server interaction. Once you have
 implemented all of the Java classes that you will use in your benchmarking framework, you and your partner should divide
-up the work associated with running your experiments. For each of the four client-server configurations, 
+up the work associated with running your experiments. For each of the four ``baseline'' client-server configurations,
+you should run the client multiple times to collect many timings and then calculate, at minimum, arithmetic means and
+standard deviations. Then, you should run both of the ``useful'' computations (i.e., the one for factorization and the
+one that you have implemented with your partner), again collecting multiple timings and calculating arithmetic means and
+standard deviations. For this laboratory assignment, you and your partner should focus in benchmarking local
+client-server communication on the same computational node. However, teams that wish to potentially earn extra credit
+should consider also running their experiments to measure the costs of remote communication.
+
+You and your partner should organize all of your empirical results into tables of data. While not absolutely required,
+you may consider preparing graphs of your results using the R language for statistical computation. Next, you should
+analyze the results in attempt to find and explain patterns in the data. Overall, what do your results show you about
+the cost of performing client-server communication.
 
 \section*{Summary of the Required Deliverables}
 
