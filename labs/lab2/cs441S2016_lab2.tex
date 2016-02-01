@@ -60,13 +60,15 @@ fully support remote communication. For instance, right now the programs are con
 assignment, the network in Alden Hall is configured to only allow connections using certain ports; if your program is
 currently connecting to a different port then the file transfer will not work correctly.
 
-Finally, you will notice that the {\tt FileSocketClient} and {\tt FileSocketServer} have some
-``hard-coded'' values in them. For instance, the port on which socket communication takes place can only be defined if a
-programmer changes the value in the source code and recompiles the Java class. Since this is not ideal from either a
-usability or an experimentation perspective, you and your partner should revise the source code so that it accepts
-command-line arguments for any values that you deem to be configurable by the user. While you may use the {\tt args[]}
-array to accept these parameters, students are encouraged to consider the use of the JCommander library available at
-\url{http://jcommander.org/}. Please see the instructor with questions about this task.
+Finally, you will notice that the {\tt FileSocketClient} and {\tt FileSocketServer} have some ``hard-coded'' values in
+them. For instance, the port on which socket communication takes place can only be defined if a programmer changes the
+value in the source code and then recompiles the Java class. Additionally, it is important to note that this
+client-server program is currently hard-coded to support the transfer of a single PDF file --- note that both the name
+of this file and the actual size of this file are currently included in the system's source code.  Since this is not
+ideal from either a usability or an experimentation perspective, you should revise the Java source code so that it
+accepts command-line arguments for any values that you deem to be configurable by the user. While you may use the {\tt
+args[]} array to accept these parameters, students are encouraged to consider the use of the JCommander library
+available at \url{http://jcommander.org/}.
 
 \section*{Evaluating the Performance of File Transfers}
 
