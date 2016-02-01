@@ -36,24 +36,27 @@ Since you configured your connection to the ``share'' repository for this course
 you should be able to change into the {\tt cs441S2016-share} directory and type the ``{\tt git pull}'' command to gain
 access to the two Java classes needed to complete this assignment.
 
-Now, please find the {\tt labs/lab2/} directory in our course's repository and work to study and understand the source
-code for the files called {\tt FileSocketClient} and {\tt FileSocketServer}. What are the key aspects of how these two
-Java classes support file transfer? For instance, you will notice that these Java classes specify items
-like a ``host'' and a ``port'' --- as in the previous laboratory assignment, make sure that you understand the meanings
-of these terms. Can you draw a technical diagram that illustrates the general interaction between a client and a server,
+Now, please find the {\tt labs/lab2/} directory in our course's repository so that you can study and understand the
+source code for the files called {\tt FileSocketClient} and {\tt FileSocketServer}. What are the key aspects of how
+these two Java classes support file transfer? For instance, you will notice that these Java classes specify items like a
+``host'' and a ``port'' --- as in the previous laboratory assignment, make sure that you understand the meanings of
+these terms. Can you draw a technical diagram that illustrates the general interaction between a client and a server,
 customized for these two classes that uses sockets? Please see the instructor if you have questions about these issues.
 
-You and your partner should work together to fully comment all of the source code in these two Java classes, making sure
-that you correctly explain how all of the methods and lines of code work. If you consult online references to support
-the development of your comments, then please include a reference to those sources in the comments. Once you have
-finished compiling these two classes, please run the {\tt FactorizationSocketServer} in one terminal window and then
-attempt to have the {\tt FactorizationSocketClient} connect to it. For now, you should run both of these programs on the
-same computational node. Once you have gotten the client-server communication to work correctly, record the output of
-the client and the server to demonstrate that they are working. If you are interested in exploring this further, please
-try to run the client on the computer of one partner and the server on the computer of another. Students should be aware
+You should now fully comment all of the source code in these two Java classes, making sure that you correctly explain
+how all of the methods and lines of code work. If you consult online references to support the development of your
+comments, then please include a reference to those sources in the comments. Once you have finished compiling these two
+classes, please run the {\tt FileSocketServer} in one terminal window and then attempt to have the {\tt
+FileSocketClient} connect to it and transfer a file. For now, you should run both of these programs on the same
+computational node. Once you have gotten the client-server-based file transfer to work correctly, record the output of the
+client and the server to demonstrate that they are working. For instance, you should make sure that the file that the
+server receives and saves is the same as the one that the client attempted to transfer.
+
+If you are interested in exploring this further, please try
+to run the client on the computer of one partner and the server on the computer of another. Students should be aware
 that, depending on their setup, they may need to enhance these two Java classes to fully support remote communication.
 
-Finally, you will notice that the {\tt FactorizationSocketClient} and {\tt FactorizationSocketServer} have some
+Finally, you will notice that the {\tt FileSocketClient} and {\tt FileSocketServer} have some
 ``hard-coded'' values in them. For instance, the port on which socket communication takes place can only be defined if a
 programmer changes the value in the source code and recompiles the Java class. Since this is not ideal from either a
 usability or an experimentation perspective, you and your partner should revise the source code so that it accepts
