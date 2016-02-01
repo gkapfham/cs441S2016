@@ -52,9 +52,13 @@ computational node. Once you have gotten the client-server-based file transfer t
 client and the server to demonstrate that they are working. For instance, you should make sure that the file that the
 server receives and saves is the same as the one that the client attempted to transfer.
 
-If you are interested in exploring this further, please try
-to run the client on the computer of one partner and the server on the computer of another. Students should be aware
-that, depending on their setup, they may need to enhance these two Java classes to fully support remote communication.
+If you are interested in exploring this further, please try to run the client on one computer and the server on another
+computer. Students should be aware that, depending on their setup, they may need to enhance these two Java classes to
+fully support remote communication. For instance, right now the programs are configured so that the server can run on
+``localhost'' --- if you want to get this to work in a remote fashion then you will need to change this name to the
+``fully-qualified name'' of a computer on the Alden Hall network. Also, as mentioned in the previous laboratory
+assignment, the network in Alden Hall is configured to only allow connections using certain ports; if your program is
+currently connecting to a different port then the file transfer will not work correctly.
 
 Finally, you will notice that the {\tt FileSocketClient} and {\tt FileSocketServer} have some
 ``hard-coded'' values in them. For instance, the port on which socket communication takes place can only be defined if a
