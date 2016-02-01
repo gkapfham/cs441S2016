@@ -12,13 +12,13 @@
 
 As mentioned in a previous laboratory assignment, the ability to implement and evaluate software that supports
 communication between a client and a server is a crucial laboratory skill that will support further work in the field of
-distributed systems. In this laboratory assignment, you will use several programs that perform client-server
-communication through the use of a ``socket'' in the Java programming language. In particular, you will focus on
-implementing a program that uses sockets to perform a file transfer on both a single node and two distinct nodes.  You
-will also perform an experimental evaluation of the performance of using sockets for client-server file transfer.  Using
+distributed systems. In this laboratory assignment, you will use two classes that perform client-server communication
+through the use of a ``socket'' in the Java programming language. In particular, you will focus on understanding and
+enhancing a program that uses sockets to perform a file transfer on both a single node and two distinct nodes.  You will
+also perform an experimental evaluation of the performance of using sockets for client-server file transfer.  Using
 either Markdown or the \LaTeX~text formatting language, you will write a scientific report explaining the performance
-results that you identified during this assignment. Finally, you will compare your finished file transfer
-system to the peer-to-peer systems described in the textbook.
+results that you identified during this assignment. Finally, you will compare your finished file transfer system to the
+peer-to-peer systems described in the textbook.
 
 \section*{Review Your Textbook}
 
@@ -73,11 +73,11 @@ available at \url{http://jcommander.org/}.
 Finally, it is worth investigating the ways in which this program will handle various types of user error. For instance,
 you should run your client program by specifying a file that does not exist on your file system. Next, you should have
 the client and the server attempt to communicate on different ports. Another idea would be to configure the client to
-look for the server on the ``localhost'' when it is in fact running on a remote computer. After brainstorming ideas with
+look for the server on the ``localhost'' node when it is in fact running on a remote computer. After brainstorming ideas with
 the course instructor and the other members of the class, you should systematically try to ``break'' the {\tt
 FileSocketClient} and {\tt FileSocketServer} and record what happens. Please use your experiences in this phase of the
-laboratory assignment to, whenever possible, derive some fundamental principles about the challenges associated with
-implementing distributed systems.
+laboratory assignment to, whenever possible, derive some principles about the fundamental challenges associated with
+implementing and testing distributed systems.
 
 \section*{Evaluating the Performance of File Transfers}
 
@@ -91,10 +91,11 @@ You should organize all of your empirical results into tables of data. While not
 preparing graphs of your results using the R language for statistical computation. Next, you should analyze the results
 in attempt to find and explain patterns in the data. Overall, what do your results show you about the cost of performing
 client-server-based file transfer? Once you are finished running these experiments, can you identify any ways in which
-you could have improved the performance of the client or the server? Finally, you partner should write a detailed
-report, using either the Markdown or the \LaTeX~text formatting language, that introduces the design of your experiment
-and your research questions, explains how you conducted the experiments, and then presents and analyzes the results.
-Please see the course instructor if you have questions about how to write a scientific report using \LaTeX~or Markdown.
+you could have improved the performance of the client or the server? Finally, you should write a detailed report, using
+either the Markdown or the \LaTeX~text formatting language, that introduces the design of your experiment and your
+research questions, explains how you conducted the experiments and analyzed the results, and then presents and analyzes
+the results.  Please see the course instructor if you have questions about how to write a scientific report using
+\LaTeX~or Markdown.
 
 \section*{Comparing to Client-Server and Peer-to-Peer File Transfer}
 
