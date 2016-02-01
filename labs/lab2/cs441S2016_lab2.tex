@@ -60,7 +60,7 @@ fully support remote communication. For instance, right now the programs are con
 assignment, the network in Alden Hall is configured to only allow connections using certain ports; if your program is
 currently connecting to a different port then the file transfer will not work correctly.
 
-Finally, you will notice that the {\tt FileSocketClient} and {\tt FileSocketServer} have some ``hard-coded'' values in
+Also, you will notice that the {\tt FileSocketClient} and {\tt FileSocketServer} have some ``hard-coded'' values in
 them. For instance, the port on which socket communication takes place can only be defined if a programmer changes the
 value in the source code and then recompiles the Java class. Additionally, it is important to note that this
 client-server program is currently hard-coded to support the transfer of a single PDF file --- note that both the name
@@ -70,17 +70,25 @@ accepts command-line arguments for any values that you deem to be configurable b
 args[]} array to accept these parameters, students are encouraged to consider the use of the JCommander library
 available at \url{http://jcommander.org/}.
 
+Finally, it is worth investigating the ways in which this program will handle various types of user error. For instance,
+you should run your client program by specifying a file that does not exist on your file system. Next, you should have
+the client and the server attempt to communicate on different ports. Another idea would be to configure the client to
+look for the server on the ``localhost'' when it is in fact running on a remote computer. After brainstorming ideas with
+the course instructor and the other members of the class, you should systematically try to ``break'' the {\tt
+FileSocketClient} and {\tt FileSocketServer} and record what happens. Please use your experiences in this phase of the
+laboratory assignment to, whenever possible, derive some fundamental principles about the challenges associated with
+implementing distributed systems.
+
 \section*{Evaluating the Performance of File Transfers}
 
-For each of the four ``baseline'' client-server configurations,
-you should run the client multiple times to collect many timings and then calculate, at minimum, arithmetic means and
-standard deviations. Then, you should run both of the ``useful'' computations (i.e., the one for factorization and the
-one that you have implemented with your partner), again collecting multiple timings and calculating arithmetic means and
-standard deviations. For this laboratory assignment, you and your partner should focus on benchmarking local
-client-server communication on the same computational node. However, teams that wish to potentially earn extra credit
-should consider also running their experiments to measure the costs of remote communication.
+Using the {\tt FileSocketClient} and {\tt FileSocketServer} you should transfer multiple files --- of sizes that you
+deem to the ``small'', ``medium'', and ``large'' --- as you run the client multiple times to collect many timings and
+then calculate, at minimum, arithmetic means and standard deviations.  For this laboratory assignment, you should focus
+on benchmarking local client-server communication on the same computational node. However, teams that wish to
+potentially earn extra credit should consider also running their experiments to measure the costs of remote
+communication.
 
-You and your partner should organize all of your empirical results into tables of data. While not absolutely required,
+You should organize all of your empirical results into tables of data. While not absolutely required,
 you may consider preparing graphs of your results using the R language for statistical computation. Next, you should
 analyze the results in attempt to find and explain patterns in the data. Overall, what do your results show you about
 the cost of performing client-server communication? Once you are finished running these experiments, can you identify
