@@ -53,7 +53,7 @@
           <h1>Computer Science 441</h1>
           <h2>Principles of Distributed Systems</h2>
           <p>Gregory M. Kapfhammer</p>
-<br /><small><a title="C C C" href="http://flickr.com/photos/gnackgnackgnack/450478667">flickr photo</a> shared by <a href="http://flickr.com/people/gnackgnackgnack">Patrick Brosset</a> under a <a href="http://creativecommons.org/licenses/by-nc/2.0/">Creative Commons ( BY-NC ) license</a> </small>
+          <br /><small><a title="C C C" href="http://flickr.com/photos/gnackgnackgnack/450478667">flickr photo</a> shared by <a href="http://flickr.com/people/gnackgnackgnack">Patrick Brosset</a> under a <a href="http://creativecommons.org/licenses/by-nc/2.0/">Creative Commons ( BY-NC ) license</a> </small>
         </section>
 
         <section>
@@ -170,7 +170,7 @@
           <p class="fragment">Make the system scalable</p>
           <p class="fragment">Let's discuss these in greater detail!</p>
           <p class="fragment"><b class="orange">Also, be aware of the pitfalls and trade-offs!</b></p>
-<br /><small><a title="Green hiding place" href="http://flickr.com/photos/pio1976/2562147442">flickr photo</a> shared by <a href="http://flickr.com/people/pio1976">p!o</a> under a <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/">Creative Commons ( BY-NC-ND ) license</a> </small>
+          <br /><small><a title="Green hiding place" href="http://flickr.com/photos/pio1976/2562147442">flickr photo</a> shared by <a href="http://flickr.com/people/pio1976">p!o</a> under a <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/">Creative Commons ( BY-NC-ND ) license</a> </small>
         </section>
 
         <section>
@@ -280,38 +280,40 @@
 
       </div>
 
-      <script src="lib/js/head.min.js"></script>
-      <script src="js/reveal.min.js"></script>
+    </div>
 
-      <script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
 
-        // Full list of configuration options available here:
-        // https://github.com/hakimel/reveal.js#configuration
-        Reveal.initialize({
-          controls: true,
-          progress: true,
-          history: true,
-          center: true,
+    <script>
 
-          theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-          transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/none/none
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-          // Parallax scrolling
-          // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-          // parallaxBackgroundSize: '2100px 900px',
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/none/none
 
-          // Optional libraries used to extend on reveal.js
-          dependencies: [
-          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-          ]
-        });
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
 
-      </script>
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+        { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
 
   </body>
 </html>
