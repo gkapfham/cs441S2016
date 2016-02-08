@@ -27,15 +27,22 @@ make sure that you understand the trade-offs associated with using parallel thre
 Students who want to learn more about the {\tt xargs} and {\tt parallel} programs that are part of this laboratory
 assignment are also encouraged to use the {\tt man} program to read their manual pages.
 
-\section*{}
+\section*{Performing Parallel Image Conversion}
 
 Since you configured your connection to the ``share'' repository for this course in a previous laboratory assignment,
 you should be able to change into the {\tt cs441S2016-share} directory and type the ``{\tt git pull}'' command to gain
-access to the many files that are needed to complete this assignment.
+access to the many files that are needed to complete this assignment. Now, change into the {\tt labs/lab3/} directory
+and explore the files that are available in the {\tt scripts} and {\tt images} directories. First, please make sure that
+you can find the files called {\tt convert\_forloop.sh}, {\tt convert\_parallel.sh}, and {\tt convert\_xargs.sh}. What
+do these scripts do?
 
+Once you have studied these scripts, you will see that the perform image conversion using the ``{\tt convert}'' command.
+This particular set of scripts uses {\tt convert} to produce ``thumbnails'' of larger images. This is a common task that
+needs to be completed if you are creating a web site that will showcase a large collection of images with a page that
+gives small --- or ``thumbnail'' --- previews of the images themselves. While you could create these thumbnails by
+repeatedly running the {\tt convert} program in the terminal window, this would be time consuming and error prone.
 
-
-
+As an alternative, these scripts automatically create thumbnails for all of the images in a directory.
 
 
 \section*{Evaluating the Parallel Computation}
@@ -61,13 +68,11 @@ please make sure that you share this repository with the instructor.
 
     \item The commented source code of the Java classes that perform client-server-based file transfer.
 
-    \item Using both text and diagrams, a description of client-server-based file transfer with sockets.
+    \item Using text and diagrams, a description of sequential and parallel image conversion methods.
 
-    \item A description of the challenges associated with performing client-server communication.
+    \item A description of the challenges associated with performing experiments with image conversion.
 
-    \item A comparison of file transfer methods that use ``centralized'' and ``decentralized'' approaches.
-
-    \item A detailed paper that reports on the empirical results arising from performing file transfers.
+    \item A detailed paper that reports on the results arising from performing image conversion.
 
     \item A description of the challenges that you encountered when completing this assignment.
 
