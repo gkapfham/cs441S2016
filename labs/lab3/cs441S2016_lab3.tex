@@ -1,24 +1,22 @@
-%!TEX root=cs441S2016_lab2.tex
+%!TEX root=cs441S2016_lab3.tex
 
 \input{labspre.tex}
 
 \usepackage[compact]{titlesec}
 
 \begin{document}
-\MYTITLE{Laboratory Assignment Two: Performance Evaluation of File Transfer Using Sockets}
-\MYHEADERS{Laboratory Assignment Two}{Due: February 8, 2016}
+\MYTITLE{Laboratory Assignment Three: Exploring and Evaluating Parallel Computation}
+\MYHEADERS{Laboratory Assignment Three}{Due: February 15, 2016}
 
 \section*{Introduction}
 
-As mentioned in a previous laboratory assignment, the ability to implement and evaluate software that supports
-communication between a client and a server is a crucial laboratory skill that will support further work in the field of
-distributed systems. In this laboratory assignment, you will use two classes that perform client-server communication
-through the use of a ``socket'' in the Java programming language. In particular, you will focus on understanding and
-enhancing a program that uses sockets to perform a file transfer on both a single node and two distinct nodes.  You will
-also perform an experimental evaluation of the performance of using sockets for client-server file transfer.  Using
-either Markdown or the \LaTeX~text formatting language, you will write a scientific report explaining the performance
-results that you identified during this assignment. Finally, you will compare your finished file transfer system to the
-peer-to-peer systems described in the textbook.
+Since processes, or ``programs in execution'', form the building blocks of distributed systems, it is important to learn
+how to create and run processes on an operating system. To ensure that distributed systems exhibit the best throughput
+and response times, it is also critical that these processes are, whenever it is appropriate to do so, executed in a
+parallel fashion. In this assignment, you will use two techniques for parallelizing computations on a single node. Next,
+you will conduct an experiment to determine how response time changes as the parameters of the parallel computation are
+modified.  Finally, using either Markdown or the \LaTeX~text formatting language, you will write a report explaining the
+performance results that you identified during this assignment.
 
 \section*{Review Your Textbook}
 
