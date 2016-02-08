@@ -25,32 +25,33 @@ a strong understanding of the basic concepts in the field of distributed systems
 Section 3.1, paying particularly close attention to the content about processes and threads. As you review Section 3.1,
 make sure that you understand the trade-offs associated with using parallel threads and processes in a software system.
 Students who want to learn more about the {\tt xargs} and {\tt parallel} programs that are part of this laboratory
-assignment are also encouraged to use the {\tt man} program to read their manual pages.
+assignment are also encouraged to read their manual pages by using the {\tt man} program.
 
 \section*{Performing Parallel Image Conversion}
 
 Since you configured your connection to the ``share'' repository for this course in a previous laboratory assignment,
-you should be able to change into the {\tt cs441S2016-share} directory and type the ``{\tt git pull}'' command to gain
+you should be able to change into the {\tt cs441S2016-share/} directory and type the ``{\tt git pull}'' command to gain
 access to the many files that are needed to complete this assignment. Now, change into the {\tt labs/lab3/} directory
 and explore the files that are available in the {\tt scripts} and {\tt images} directories. First, please make sure that
 you can find the files called {\tt convert\_forloop.sh}, {\tt convert\_parallel.sh}, and {\tt convert\_xargs.sh}. What
 do these scripts do?
 
-Once you have studied these scripts, you will see that the perform image conversion using the ``{\tt convert}'' command.
-This particular set of scripts uses {\tt convert} to produce ``thumbnails'' of larger images. This is a common task that
-needs to be completed if you are creating a web site that will showcase a large collection of images with a page that
-gives small --- or ``thumbnail'' --- previews of the images themselves. While you could create these thumbnails by
-repeatedly running the {\tt convert} program in the terminal window, this would be time consuming and error prone.
+Once you have studied these scripts, you will see that they perform image conversion using the ``{\tt convert}''
+command.  This particular set of scripts uses {\tt convert} to produce ``thumbnails'' of larger images. This is a common
+task that needs to be completed if you are creating a web site that will showcase a large collection of images with a
+page that gives small --- or ``thumbnail'' --- previews of the images themselves. While you could create these
+thumbnails by repeatedly running the {\tt convert} program in the terminal window, this would be time consuming and
+error prone.
 
 As an alternative, these scripts automatically create thumbnails for all of the images in a directory. One of the
 scripts uses a {\tt for} loop to perform the conversion while the other two respectively use the {\tt parallel} and {\tt
-  xargs} programs in an attempt to speed up the entire process. Next, change into the directory called {\tt
+  xargs} programs in an attempt to speed up the entire process. Now, change into the directory called {\tt
   images/slides/} and run the {\tt convert\_forloop.sh} script (you will probably need to type {\tt
 ../../scripts/convert/convert\_forloop.sh} to get this command to work correctly). How long did it take to perform the
-conversion? Now, please try out the other two scripts as well. Which approach to conversion is the fastest? Can you
-explain why?
+conversion? Now, please try out the other two scripts as well. Which approach to image manipulation is the fastest? Can
+you explain why?
 
-\section*{Empirically Evaluating the Parallel Computation}
+\section*{Empirically Evaluating Sequential and Parallel Computation}
 
 Using the provided scripts, you are responsible for conducting an experiment to evaluate the performance of sequential
 and parallel image manipulation. You should explore the performance trade-offs as you start with directories containing
