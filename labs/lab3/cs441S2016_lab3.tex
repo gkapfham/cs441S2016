@@ -42,11 +42,21 @@ needs to be completed if you are creating a web site that will showcase a large 
 gives small --- or ``thumbnail'' --- previews of the images themselves. While you could create these thumbnails by
 repeatedly running the {\tt convert} program in the terminal window, this would be time consuming and error prone.
 
-As an alternative, these scripts automatically create thumbnails for all of the images in a directory.
+As an alternative, these scripts automatically create thumbnails for all of the images in a directory. One of the
+scripts uses a {\tt for} loop to perform the conversion while the other two respectively use the {\tt parallel} and {\tt
+  xargs} programs in an attempt to speed up the entire process. Next, change into the directory called {\tt
+  images/slides/} and run the {\tt convert\_forloop.sh} script (you will probably need to type {\tt
+../../scripts/convert/convert\_forloop.sh} to get this command to work correctly). How long did it take to perform the
+conversion? Now, please try out the other two scripts as well. Which approach to conversion is the fastest? Can you
+explain why?
 
+\section*{Empirically Evaluating the Parallel Computation}
 
-\section*{Evaluating the Parallel Computation}
-
+Using the provided scripts, you are responsible for conducting an experiment to evaluate the performance of sequential
+and parallel image manipulation. You should explore the performance trade-offs as you start with directories containing
+a few images and then gradually increase to ones contain many images. To support the creation of these directories,
+please use the {\tt download\_dogs.sh} and {\tt download\_cats.sh} scripts provided in the {\tt scripts/download/}
+directory.
 
 You should organize all of your empirical results into tables of data. While not absolutely required, you may consider
 preparing graphs of your results using the R language for statistical computation. Next, you should analyze the results
@@ -84,8 +94,9 @@ carefully between the student who discusses the principles underlying a problem 
 assignments that are identical to, or merely variations on, someone else's work.  With the exception of the provided
 source code, deliverables that are otherwise nearly identical to the work of others will be taken as evidence of
 violating the \mbox{Honor Code}. This means that, for instance, all of the other comments, source code, data, and
-written reports should be the original work of the student completing this assignment. Students who have questions about
-the Honor Code and how it applies to this laboratory assignment should schedule a meeting with the course instructor
-before this assignment's due date.
+written reports should be the original work of the student completing this assignment.
+
+% Students who have questions about the Honor Code and how it applies to this laboratory assignment should schedule a
+% meeting with the course instructor before this assignment's due date.
 
 \end{document}
