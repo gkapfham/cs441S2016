@@ -54,19 +54,21 @@ explain why?
 
 Using the provided scripts, you are responsible for conducting an experiment to evaluate the performance of sequential
 and parallel image manipulation. You should explore the performance trade-offs as you start with directories containing
-a few images and then gradually increase to ones contain many images. To support the creation of these directories,
+a few images and then gradually increase to ones with many images. To support the population of these directories,
 please use the {\tt download\_dogs.sh} and {\tt download\_cats.sh} scripts provided in the {\tt scripts/download/}
-directory.
+directory. As part of your experiment, you should identify and explain scenarios in which parallel computation does not
+provide any appreciable benefits. Using knowledge gathered from Linux manual pages, you should also explore how
+different parameters to the {\tt parallel} and {\tt xargs} influence the efficiency of the computation.
 
-You should organize all of your empirical results into tables of data. While not absolutely required, you may consider
+You must organize all of your empirical results into tables of data. While not absolutely required, you may consider
 preparing graphs of your results using the R language for statistical computation. Next, you should analyze the results
 in attempt to find and explain patterns in the data. Overall, what do your results show you about the cost of performing
-parallel image manipulation? Once you are finished running these experiments, can you identify any ways in which you
-could have improved the performance of the parallel computations? Finally, you should write a detailed report, using
-either the Markdown or the \LaTeX~text formatting language, that introduces the design of your experiment and your
-research questions, explains how you conducted the experiments and analyzed the results, and then presents and analyzes
-the results.  Please see the course instructor if you have questions about how to write a scientific report using
-\LaTeX~or Markdown.
+parallel image manipulation? Once you are finished running your baseline experiments, can you identify any ways in which
+you can improve the performance of the parallel computations? Finally, you should write a detailed report, using either
+the Markdown or the \LaTeX~text formatting language, that introduces the design of your experiment and your research
+questions, explains how you conducted the experiments and evaluated the results, and then presents and analyzes the
+results.  Please see the course instructor if you have questions about how to write a scientific report using \LaTeX~or
+Markdown.
 
 \section*{Summary of the Required Deliverables}
 
@@ -74,9 +76,11 @@ This assignment invites you to submit printed and signed versions of the followi
 all of these deliverables must be in a {\tt cs441S2016-<your user name>} repository that you created for this class;
 please make sure that you share this repository with the instructor.
 
+\vspace*{-.1in}
 \begin{enumerate}
+  \itemsep 0em
 
-    \item The commented source code of the Java classes that perform client-server-based file transfer.
+    \item The final version of the scripts that you used to conduct the performance evaluation.
 
     \item Using text and diagrams, a description of sequential and parallel image conversion methods.
 
@@ -87,6 +91,7 @@ please make sure that you share this repository with the instructor.
     \item A description of the challenges that you encountered when completing this assignment.
 
 \end{enumerate}
+\vspace*{-.1in}
 
 In adherence to the Honor Code, students should complete this assignment on an individual basis. While it is appropriate
 for students in this class to have high-level conversations about the assignment, it is necessary to distinguish
