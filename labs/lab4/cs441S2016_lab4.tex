@@ -53,12 +53,30 @@ pack200}, can you learn how to perform Pack200 compression in a standalone fashi
 Note that you already have these files, such as {\tt JavaRunner.jar} in a Jar file format. If you want to discover the
 performance of the {\tt jar} compression technique, then you will have to first decompress it and then run the command
 again in compression mode. If you want to learn more about how to run the {\tt jar} command, please read its manual page
-or talk with the course instructor.  Since it is important to quantify the time required to perform compression with
-either the {\tt jar} or the {\tt pack200} commands, you should also ensure that you know how to preface one of your
-previously executed command-lines with either {\tt time} or {\tt /usr/bin/time}. Using one of these tools, can you
-determine how long it takes to compress the code and data associated with your chosen Java programs?
+or talk with the instructor.  Since it is important to quantify the time required for compression with either the {\tt
+jar} or the {\tt pack200} commands, you should also ensure that you know how to preface one of your previously executed
+command-lines with either {\tt time} or {\tt /usr/bin/time}. Using one of these tools, can you determine how long it
+takes to compress the code and data associated with your chosen Java programs? Finally, you and your partner should
+discuss an equation to calculate the ``percentage reduction'' and then use this equation for these files. Which method
+is the best at compressing the \mbox{code and data?}
 
-\section*{Empirically Studying Throughput and Response Time}
+So far, you have not actually transferred these archives across the network, as is depicted in Figure 3-17 of your
+textbook. To accomplish this task, please change into the directory that contains all of your archives and type the
+command ``{\tt python -m SimpleHTTPServer 4200}'' to start an HTTP server using the Python programming language. Now,
+you can use the {\tt wget} command in another terminal window to download a compressed archive. You and your partner
+should now discuss equations and means for calculating both response time and throughput. Once you have agreed on the
+correct equations, you should use them to compute these metrics for some of the archives. Which compression technique
+tends to yield the best values? Can you explain why? Please remember that if you want to transfer files with HTTP from
+one computer in the Alden Hall network to another, then you need to use certain ports that are not blocked by the
+firewall.
+
+\section*{Empirically Studying Compression Methods}
+
+You and your partner(s) should create a new repository called {\tt cs441S2016-lab04-<first user name>-<second use
+name>}.  Next, make sure that the individuals in your partnership --- and the course instructor --- have access to the
+repository that you will use for this assignment.  Students who have questions about the use of the Git version control
+system should ensure that they have resolved them before leaving the laboratory session today. Finally, please make a
+Slack channel, for your team and the instructor, so that you can easily communicate while completing this assignment.
 
 
 
@@ -69,9 +87,9 @@ all of these deliverables must be in the repository that you created for this as
 
 \begin{enumerate}
 
-    \item 
+    \item
 
-    \item 
+    \item
 
     \item Using both text and diagrams, a description of client-server communication with compression.
 
