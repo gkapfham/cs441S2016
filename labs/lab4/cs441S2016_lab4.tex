@@ -78,7 +78,33 @@ repository that you will use for this assignment.  Students who have questions a
 system should ensure that they have resolved them before leaving the laboratory session today. Finally, please make a
 Slack channel, for your team and the instructor, so that you can easily communicate while completing this assignment.
 
+If you and your team members did not already do so, please select eight Java programs, in addition to the two already
+provided to you by the instructor, to support your empirical study of compression methods. You should try to select
+Java programs that have archives that vary in their size and contents. For instance, please avoid selecting programs
+that all result in small archives or that only contain Java bytecodes. Next, create a directory structure in your
+repository that will make it easy to store all of these archives and then later transfer them using an HTTP server.
 
+For this experiment, you will investigate the use of the Zip, Pack200, and Pack200+Gzip compression techniques. First,
+you will measure the time overhead associated with running each of these methods for the ten chosen Java programs. Next,
+you should calculate the percentage change in size when compression with Zip is considered the ``baseline'' technique
+and either Pack200 or Pack200+Gzip is the ``improved'' approach. Additionally, you should time how long it takes to
+download these archives using the {\tt wget} command as it connects to the {\tt SimpleHTTPServer}. Finally, please
+calculate the response time and throughput associated with transferring the various Java archives. Whenever your
+experimental design requires you to collect a data value that is subject to variation, you should conduct multiple
+trials and report averages and standard deviations. Finally, you should consider all of your data points (e.g.,
+compression times, response times, and throughputs) to determine when to use compression during client-server
+communication.
+
+At minimum, you and your partner(s) should organize all of your empirical results into tables of data. While not
+absolutely required, you may consider preparing graphs of your results using the R language for statistical computation.
+Next, you should analyze the results in an attempt to find and explain patterns in the data. Overall, what do your
+results show you about the costs and benefits of performing compression during client-server communication? Once you are
+finished running these experiments, can you identify the best ways to use compression to improve the performance of this
+communication?  In addition to merely noting the trends in your data sets (i.e., ``compression technique $A$ is better
+for Java program $P$''), you and your team members should always attempt to use background resources to explain why
+these trends are evident in your data sets.  Finally, you and your partner(s) should write a detailed report, using
+either the Markdown or the \LaTeX~text formatting language, that introduces the design of your experiment and your
+research questions, explains how you conducted the experiments, and then presents and analyzes the results.
 
 \section*{Summary of the Required Deliverables}
 
