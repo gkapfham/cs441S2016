@@ -43,6 +43,21 @@ other types of files that would support the execution of a program. In addition 
 files that you and you partner find, I have provided two files to you that you can obtain through the ``share''
 repository for this course; please type the ``{\tt git pull}'' to download these files.
 
+What is the size of the two Jar files that I have provided to you? Can you report the size of these files in bytes? Once
+you know their correct size, go ahead and learn more about how to run the {\tt pack200} command in your terminal window.
+For example, if I wanted to perform both Pack200 and Gzip compression on one of the provided Jar files, I could type the
+following command ``{\tt pack200 JavaRunner.pack.gz JavaRunner.jar}'' in the terminal. Now, which of the two archives
+for the JavaRunner program are bigger? Can you explain why this is the case? After studying the manual page for {\tt
+pack200}, can you learn how to perform Pack200 compression in a standalone fashion?
+
+Note that you already have these files, such as {\tt JavaRunner.jar} in a Jar file format. If you want to discover the
+performance of the {\tt jar} compression technique, then you will have to first decompress it and then run the command
+again in compression mode. If you want to learn more about how to run the {\tt jar} command, please read its manual page
+or talk with the course instructor.  Since it is important to quantify the time required to perform compression with
+either the {\tt jar} or the {\tt pack200} commands, you should also ensure that you know how to preface one of your
+previously executed command-lines with either {\tt time} or {\tt /usr/bin/time}. Using one of these tools, can you
+determine how long it takes to compress the code and data associated with your chosen Java programs?
+
 \section*{Empirically Studying Throughput and Response Time}
 
 
@@ -54,15 +69,17 @@ all of these deliverables must be in the repository that you created for this as
 
 \begin{enumerate}
 
-    \item The well-commented source code of the Java classes that form the two ``useful'' benchmarks,
+    \item 
 
-    \item The well-commented source code of the Java classes for the four ``baseline'' benchmarks.
+    \item 
 
-    \item Using both text and diagrams, a description of client-server communication with sockets.
+    \item Using both text and diagrams, a description of client-server communication with compression.
 
     \item A detailed paper that reports on the empirical results arising from the use of the benchmarks.
 
     \item A description of the challenges that you encountered when completing this assignment.
+
+    \item A description of the tasks completed by the members of your partnership.
 
 \end{enumerate}
 
