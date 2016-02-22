@@ -37,12 +37,14 @@ instructor to ensure that they have resolved them before completing this laborat
 
 \section*{Exploring Client-Server Communication}
 
-Please find the {\tt labs/lab5/} directory in our course's repository and work with your partner to study and understand
-the source code for the files called {\tt FactorizationXMLClient} and {\tt FactorizationXMLServer}. What are the
-key aspects of how these two Java classes support client-server communication? For instance, you will notice that these
-Java classes specify items like a ``host'' and a ``port'' --- what are the meanings of these terms? Can you draw a
-technical diagram that illustrates the general interaction between a client and a server, customized for these two
-classes that uses sockets? Please see the instructor if you have questions about these issues.
+\begin{sloppypar}
+  Please find the {\tt labs/lab5/} directory in our course's repository and work with your partner to study and
+  understand the source code for the files called {\tt FactorizationXMLClient} and {\tt FactorizationXMLServer}. What
+  are the key aspects of how these two Java classes support client-server communication? For instance, you will notice
+  that these Java classes specify items like a ``host'', a ``port'', and a ``Web server'' --- what are the meanings of
+  these terms? Can you draw a diagram that illustrates the general interaction between a client and a server, customized
+  for these two classes that use XML-RPC? Please see the instructor if you have questions about these issues.
+\end{sloppypar}
 
 You and your partner should work together to fully comment all of the source code in these two Java classes, making sure
 that you correctly explain how all of the methods and lines of code work. If you consult online references to support
@@ -55,7 +57,7 @@ try to run the client on the computer of one partner and the server on the compu
 that, depending on their setup, they may need to enhance these two Java classes to fully support remote communication.
 
 Finally, you will notice that the {\tt FactorizationXMLClient} and {\tt FactorizationXMLServer} have some
-``hard-coded'' values in them. For instance, the port on which socket communication takes place can only be defined if a
+``hard-coded'' values in them. For instance, the port on which XML-RPC communication takes place can only be defined if a
 programmer changes the value in the source code and recompiles the Java class. Since this is not ideal from either a
 usability or an experimentation perspective, you and your partner should revise the source code so that it accepts
 command-line arguments for any values that you deem to be configurable by the user. While you may use the {\tt args[]}
