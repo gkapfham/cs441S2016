@@ -43,7 +43,9 @@ instructor to ensure that they have resolved them before completing this laborat
   are the key aspects of how these two Java classes support client-server communication? For instance, you will notice
   that these Java classes specify items like a ``host'', a ``port'', and a ``Web server'' --- what are the meanings of
   these terms? Can you draw a diagram that illustrates the general interaction between a client and a server, customized
-  for these two classes that use XML-RPC? Please see the instructor if you have questions about these issues.
+  for these two classes that use XML-RPC? Finally, make sure that you understand how these two classes perform
+  communication in a way that is similar to and different from those classes that performed socket-based messaging.
+  Please see the course instructor if you have questions about these issues.
 \end{sloppypar}
 
 You and your partner should work together to fully comment all of the source code in these two Java classes, making sure
@@ -66,19 +68,23 @@ array to accept these parameters, students are encouraged to consider the use of
 
 \section*{Implementing and Using a Benchmarking Framework}
 
-Now, you and your partner should study the code for the {\tt LSXMLClient} and the {\tt LSXMLServer} --- these Java
-classes will serve as the start of a simple benchmarking framework that you and your partner will implement. The ``{\tt
-LS}'' abbreviated in the names of these classes is for the words ``Large'' and ``Small'' --- what about the
-client-server interaction in this system can be classified in this fashion? After discussing this question with your
-partner, you should implement six additional Java classes respectively called, {\tt SLXMLClient}, {\tt
-SLXMLServer}, {\tt SSXMLClient}, {\tt SSXMLServer}, {\tt LLXMLClient}, and {\tt LLXMLServer}. As you are
-implementing all of these Java classes make sure that the ways in which these clients and servers interact adhere to the
-names that you have assigned to the classes. Overall, these programs will enable you to establish some ``baseline''
-measurements for the cost of performing client-server communication on a single computer. Next, you and your partner
-should implement one final program that is more like the {\tt FactorizationXMLClient} and {\tt
-FactorizationXMLServer} --- that is, it should perform some type of ``useful'' computation on the server whenever the
-client makes the appropriate request. Teams that are unsure of what type of additional computation to
-implement should take time to brainstorm ideas with the instructor.
+Following the paradigm from a previous laboratory assignment, you and your partner should implement the code for the
+{\tt LSXMLClient} and the {\tt LSXMLServer} --- these Java classes will serve as the start of a simple benchmarking
+framework that you and your partner will implement. The ``{\tt LS}'' abbreviated in the names of these classes is for
+the words ``Large'' and ``Small'' --- what about the client-server interaction in this system can be classified in this
+fashion? After discussing this question with your partner, you should also create six additional Java classes
+respectively called, {\tt SLXMLClient}, {\tt SLXMLServer}, {\tt SSXMLClient}, {\tt SSXMLServer}, {\tt LLXMLClient}, and
+{\tt LLXMLServer}. As you are implementing all of these Java classes make sure that the ways in which these clients and
+servers interact adhere to the names that you have assigned to the corresponding Java classes.
+
+Overall, these programs will enable you to establish some ``baseline'' measurements for the cost of performing
+client-server communication on a single computer.  Next, you and your partner should implement one final program that is
+more like the {\tt FactorizationXMLClient} and {\tt FactorizationXMLServer} --- that is, it should perform some type of
+``useful'' computation on the server whenever the client makes the appropriate request. As long as full acknowledgement
+is given, teams are encouraged to reuse code from a previous assignment (e.g., the socket-based benchmarks) as they are
+implementing their benchmarks. If you do adopt code from a previous assignment, then please remember that past
+benchmarks used sockets and this assignment requires the use of XML-RPC.  Your team can brainstorm ideas for new
+benchmarks with the instructor.
 
 As you are creating your programs, make sure that you give them command-line arguments that will effectively support
 running experiments and collecting data about the response time of the client-server interaction. Once you have
@@ -89,7 +95,9 @@ standard deviations. Then, you should run both of the ``useful'' computations (i
 one that you have implemented with your partner), again collecting multiple timings and calculating arithmetic means and
 standard deviations. For this laboratory assignment, you and your partner should focus on benchmarking local
 client-server communication on the same computational node. However, teams that wish to potentially earn extra credit
-should consider also running their experiments to measure the costs of remote communication.
+should consider also running their experiments to measure the costs of remote communication. Finally, please make sure
+that your report compares and contrasts the cost of communication when using either sockets or XML-RPC. Which approach
+is faster? Can you explain why is this the case?
 
 You and your partner should organize all of your empirical results into tables of data. While not absolutely required,
 you may consider preparing graphs of your results using the R language for statistical computation. Next, you should
@@ -97,15 +105,18 @@ analyze the results in attempt to find and explain patterns in the data. Overall
 the cost of performing client-server communication? Once you are finished running these experiments, can you identify
 any ways in which you could have improved the performance of the client or the server? Finally, you and your partner
 should write a detailed report, using either the Markdown or the \LaTeX~text formatting language, that introduces the
-design of your experiment and your research questions, explains how you conducted the experiments, and then presents and
-analyzes the results.
+design of your experiment and your research questions, explains how you conducted the experiments, and then thoroughly
+presents and analyzes the results.
 
 \section*{Summary of the Required Deliverables}
 
 This assignment invites you to submit printed and signed versions of the following deliverables. Additionally,
 all of these deliverables must be in the repository that you created for this assignment.
 
+\vspace*{-.15in}
+
 \begin{enumerate}
+  \itemsep 0em
 
     \item The well-commented source code of the Java classes that form the two ``useful'' benchmarks,
 
@@ -121,14 +132,18 @@ all of these deliverables must be in the repository that you created for this as
 
 \end{enumerate}
 
-In adherence to the Honor Code, students should complete this assignment on an group basis. While it is appropriate
-for students in this class to have high-level conversations about the assignment, it is necessary to distinguish
-carefully between the student who discusses the principles underlying a problem with others and the student who produces
-assignments that are identical to, or merely variations on, someone else's work.  With the exception of the provided
-source code, deliverables that are otherwise nearly identical to the work of others will be taken as evidence of
-violating the \mbox{Honor Code}. This means that, for instance, all of the other comments, source code, data, and
-written reports should be the original work of the two members of the partnership. Students who have questions about the
-Honor Code and how it applies to this assignment should schedule a meeting with the course instructor before this
-assignment's due date.
+\vspace*{-.15in}
+
+% With the exception of the provided source code, deliverables that are otherwise nearly identical to the work of others
+% will be taken as evidence of violating the \mbox{Honor Code}.
+
+In adherence to the Honor Code, students should complete this assignment on an group basis. While it is appropriate for
+students in this class to have high-level conversations about the assignment, it is necessary to distinguish carefully
+between the student who discusses the principles underlying a problem with others and the student who produces
+assignments that are identical to, or merely variations on, someone else's work.  This means that, for instance, all of
+the other comments, source code, data, and written reports --- with the exception of the code that the instructor
+provided through the ``share'' repository --- should be the original work of the two members of the partnership.
+Students who have questions about the Honor Code and how it applies to this assignment should schedule a meeting with
+the course instructor before this assignment's due date.
 
 \end{document}
