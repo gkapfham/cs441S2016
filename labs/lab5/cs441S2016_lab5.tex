@@ -58,21 +58,21 @@ the client and the server to demonstrate that they are working. If you are inter
 try to run the client on the computer of one partner and the server on the computer of another. Students should be aware
 that, depending on their setup, they may need to enhance these two Java classes to fully support remote communication.
 
-Finally, you will notice that the {\tt FactorizationXMLClient} and {\tt FactorizationXMLServer} have some
-``hard-coded'' values in them. For instance, the port on which XML-RPC communication takes place can only be defined if a
-programmer changes the value in the source code and recompiles the Java class. Since this is not ideal from either a
-usability or an experimentation perspective, you and your partner should revise the source code so that it accepts
-command-line arguments for any values that you deem to be configurable by the user. While you may use the {\tt args[]}
-array to accept these parameters, students are encouraged to consider the use of the JCommander library available at
+Finally, you will notice that the {\tt FactorizationXMLClient} and {\tt FactorizationXMLServer} have some ``hard-coded''
+values in them. For instance, the port on which XML-RPC communication takes place can only be defined if a programmer
+changes a value in the source code and recompiles the Java class. Since this is not ideal from either a usability or an
+experimentation perspective, you and your partner should revise the source code so that it accepts command-line
+arguments for any values that you deem to be configurable by the user. While you may use the {\tt args[]} array to
+accept these parameters, students are encouraged to consider the use of the JCommander library available at
 \url{http://jcommander.org/}. Please see the instructor with questions about this task.
 
 \section*{Implementing and Using a Benchmarking Framework}
 
-Following the paradigm from a previous laboratory assignment, you and your partner should implement the code for the
-{\tt LSXMLClient} and the {\tt LSXMLServer} --- these Java classes will serve as the start of a simple benchmarking
-framework that you and your partner will implement. The ``{\tt LS}'' abbreviated in the names of these classes is for
-the words ``Large'' and ``Small'' --- what about the client-server interaction in this system can be classified in this
-fashion? After discussing this question with your partner, you should also create six additional Java classes
+Following the paradigm from a previous laboratory assignment, you and your partner should implement the code for an {\tt
+LSXMLClient} and the {\tt LSXMLServer} --- these Java classes will serve as the start of a simple benchmarking framework
+that you and your partner will implement. The ``{\tt LS}'' abbreviated in the names of these classes is for the words
+``Large'' and ``Small'' --- what about the client-server interaction in this system should be classified in this
+fashion?  After discussing this question with your partner, you should also create six additional Java classes
 respectively called, {\tt SLXMLClient}, {\tt SLXMLServer}, {\tt SSXMLClient}, {\tt SSXMLServer}, {\tt LLXMLClient}, and
 {\tt LLXMLServer}. As you are implementing all of these Java classes make sure that the ways in which these clients and
 servers interact adhere to the names that you have assigned to the corresponding Java classes.
@@ -82,7 +82,7 @@ client-server communication on a single computer.  Next, you and your partner sh
 more like the {\tt FactorizationXMLClient} and {\tt FactorizationXMLServer} --- that is, it should perform some type of
 ``useful'' computation on the server whenever the client makes the appropriate request. As long as full acknowledgement
 is given, teams are encouraged to reuse code from a previous assignment (e.g., the socket-based benchmarks) as they are
-implementing their benchmarks. If you do adopt code from a previous assignment, then please remember that past
+implementing the final program. If you do adopt code from a previous assignment, then please remember that past
 benchmarks used sockets and this assignment requires the use of XML-RPC.  Your team can brainstorm ideas for new
 benchmarks with the instructor.
 
