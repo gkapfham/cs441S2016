@@ -8,14 +8,14 @@
 
 \section*{Introduction}
 
-There are certain situations in which it may not be best to use a client-server-based distributed system that uses
+There are certain situations in which it may not be best to create a client-server-based distributed system that uses
 unicasting for the exchange of messages. For instance, the need for an alternative to unicasting can arise when a single
-node in the distributed system needs to quickly communicate a message to many nodes. Unicasting may also be an
+node in the distributed system must quickly communicate a message to many nodes. Unicasting may also be an
 unsuitable solution when a client is attempting to locate a server that migrates around a local-area network. This
 laboratory assignment will explore multicasting as an alternative to unicasting, giving students the opportunity to
 investigate the trade-offs of this alternative to communicating in a ``point-to-point'' fashion.  In addition to running
-a multicast system supporting communication between several nodes, you will write a short report, using either Markdown
-or \LaTeX, that discusses the trade-offs associated with multicasting.
+a multicast system supporting communication between several nodes, you will write a report, using either Markdown
+or \LaTeX, examining the trade-offs and applications of multicasting.
 
 \section*{Review Your Textbook}
 
@@ -24,20 +24,20 @@ you have a question about this content, then please resolve it before starting t
 should examine the content in Section 4.1 that discusses the protocols commonly used in distributed systems, paying
 particularly close attention to the material about connection-oriented and connectionless protocols. It is also
 important for you to study the content in Section 4.5 that talks about the various approaches to multicast
-communication. Students who are interested in reading a more advanced treatment of ways to achieve reliable multicasting
-are encouraged to read Section 8.4. Please see the instructor if you have any questions.
+communication. Students who are interested in studying a more advanced treatment of ways to achieve reliable
+multicasting are encouraged to read Section 8.4. Please see the instructor if you have any questions.
 
 \section*{Exploring Multicast Communication}
 
 Since you configured your connection to the ``share'' repository for this course in a previous laboratory assignment,
-you should be able to change into the {\tt cs441S2016-share} directory and type the ``{\tt git pull}'' command to gain
+you should be able to change into the {\tt cs441S2016-share/} directory and type the ``{\tt git pull}'' command to gain
 access to the two Java classes needed to complete this assignment.
 
 \begin{sloppypar}
   Now, please find the {\tt labs/lab6/} directory in our course's repository so that you can study and understand the
   source code for the files called {\tt MulticastSocketReceiver.java} and {\tt MulticastSocketSender.java}. What are the
   key aspects of how these two Java classes support multicast communication? For instance, you will notice that these
-  Java specify a ``port'' --- and, yet, do not give a ``host'' as you saw in the previous assignments. To learn more
+  Java classes specify a ``port'' --- and, yet, do not give a ``host'' as you saw in the previous assignments. To learn more
   about why this is the case and to better understand the trade-offs associated with this approach, you should read the
   Java documentation for the {\tt java.net.DatagramPacket}, {\tt java.net.InetAddress}, and {\tt
   java.net.MulticastSocket} classes. In particular, you should investigate what it means for the {\tt DatagramPacket}
@@ -63,7 +63,7 @@ locate and download the article ``An Internet multicast system for the stock mar
 Shur. How is the approach to multicasting that this paper presents different than the one that you have used in this
 laboratory assignment? Would it be a good idea to use the code from this laboratory assignment in a multicasting system
 for the stock market? Why or why not? In addition to reading and reporting on this paper, you should also download and
-read one more paper from the ACM Digital Library. Students should focus on finding an additional article that explores
+read one more paper from the ACM Digital Library. Students should focus on finding an additional article that presents
 either a real-world development and application of multicasting or an empirical characterization of how multicasting is
 used in a real-world setting. Please see the instructor if you have questions about this part of the assignment.
 
@@ -86,7 +86,7 @@ please make sure that you share this repository with the instructor.
 
   \item A paper that responds to the questions that this assignment poses about multicasting.
 
-  \item A report that explicitly compares and contrasts multicast and unicast remote communication.
+  \item A that explicitly compares and contrasts multicast and unicast remote communication.
 
   \item A document that summarizes the different types of multicasting systems used in production.
 
