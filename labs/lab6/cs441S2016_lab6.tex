@@ -47,30 +47,39 @@ access to the two Java classes needed to complete this assignment.
   about these issues.
 \end{sloppypar}
 
-
+Once you have carefully studied the two provided Java classes, you should attempt to compile and run them in your
+terminal window. Please note that this system will only work correctly if you first run the {\tt
+MulticastSocketReceiver} and you then execute the {\tt MulticastSocketSender}. After running these two programs, you
+should record the output that they produce. Next, please try to run one, two, three, four, and five separate versions of
+the {\tt MulticastSocketReceiver} on different computers in the Alden Hall network. You can accomplish this task by
+using {\tt ssh} to connect to a remote computer in a separate terminal window and then running the {\tt
+  MulticastSocketReceiver} from this location. Next, please find the location in the source code that declares the {\tt
+String INET\_ADDR} variable. What is the purpose of this variable? Is it possible for this program to work if you change
+this address to a different value? What are some values that seem to work correctly?
 
 
 \section*{Summary of the Required Deliverables}
 
 This assignment invites you to submit printed and signed versions of the following deliverables. Additionally,
-all of these deliverables must be in the repository that you created for this assignment.
+all of these deliverables must be in a {\tt cs441S2016-<your user name>} repository that you created for this class;
+please make sure that you share this repository with the instructor.
 
 \vspace*{-.15in}
 
 \begin{enumerate}
   \itemsep 0em
 
-    \item The well-commented source code of the Java classes that form the two ``useful'' benchmarks.
+  \item The well-commented source code of the Java class called {\tt MulticastSocketSender}.
 
-    \item The well-commented source code of the Java classes for the four ``baseline'' benchmarks.
+  \item The well-commented source code of the Java class called {\tt MulticastSocketReceiver}.
 
-    \item Using both text and diagrams, a description of client-server communication with XML-RPC.
+  \item Using both text and diagrams, a description of client-server communication with multicasting.
 
-    \item A detailed paper that reports on the empirical results arising from the use of the benchmarks.
+  \item A report that responds to the questions that this assignment poses about multicasting.
 
-    \item A description of the challenges that you encountered when completing this assignment.
+  \item A report that compares and contrasts multicast and unicast remote communication.
 
-    \item A detailed listing of the tasks completed by each member of your partnership.
+  \item A reflection on the challenges that you encountered when completing this assignment.
 
 \end{enumerate}
 
@@ -79,13 +88,14 @@ all of these deliverables must be in the repository that you created for this as
 % With the exception of the provided source code, deliverables that are otherwise nearly identical to the work of others
 % will be taken as evidence of violating the \mbox{Honor Code}.
 
-In adherence to the Honor Code, students should complete this assignment on an group basis. While it is appropriate for
-students in this class to have high-level conversations about the assignment, it is necessary to distinguish carefully
-between the student who discusses with others the principles underlying a problem and the student who produces
-assignments that are identical to, or merely variations on, someone else's work.  This means that, for instance, all of
-the other comments, source code, data, and written reports --- with the exception of the code that the instructor
-provided through the ``share'' repository --- should be the original work of the members of the partnership.  Students
-who have questions about the Honor Code and how it applies to this assignment should schedule a meeting with the course
-instructor before this assignment's due date.
+In adherence to the Honor Code, students should complete this assignment on an individual basis. While it is appropriate
+for students in this class to have high-level conversations about the assignment, it is necessary to distinguish
+carefully between the student who discusses the principles underlying a problem with others and the student who produces
+assignments that are identical to, or merely variations on, someone else's work.  With the exception of the provided
+source code, deliverables that are otherwise nearly identical to the work of others will be taken as evidence of
+violating the \mbox{Honor Code}. This means that, for instance, all of the other comments, source code, data, and
+written reports should be the original work of the student completing this assignment. Students who have questions about
+the Honor Code and how it applies to this laboratory assignment should schedule a meeting with the course instructor
+before this assignment's due date.
 
 \end{document}
