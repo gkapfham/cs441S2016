@@ -27,20 +27,26 @@ important for you to study the content in Section 4.5 that talks about the vario
 communication. Students who are interested in reading a more advanced treatment of ways to achieve reliable multicasting
 are encouraged to read Section 8.4. Please see the instructor if you have any questions.
 
-\section*{Access the Course Repository}
+\section*{Exploring Multicast Communication}
 
 Since you configured your connection to the ``share'' repository for this course in a previous laboratory assignment,
 you should be able to change into the {\tt cs441S2016-share} directory and type the ``{\tt git pull}'' command to gain
 access to the two Java classes needed to complete this assignment.
 
-Now, please find the {\tt labs/lab2/} directory in our course's repository so that you can study and understand the
-source code for the files called {\tt FileSocketClient} and {\tt FileSocketServer}. What are the key aspects of how
-these two Java classes support file transfer? For instance, you will notice that these Java classes specify items like a
-``host'' and a ``port'' --- as in the previous laboratory assignment, make sure that you understand the meanings of
-these terms. Can you draw a technical diagram that illustrates the general interaction between a client and a server,
-customized for these two classes that uses sockets? Please see the instructor if you have questions about these issues.
+\begin{sloppypar}
+  Now, please find the {\tt labs/lab6/} directory in our course's repository so that you can study and understand the
+  source code for the files called {\tt MulticastSocketReceiver.java} and {\tt MulticastSocketSender.java}. What are the
+  key aspects of how these two Java classes support multicast communication? For instance, you will notice that these
+  Java specify a ``port'' --- and, yet, do not give a ``host'' as you saw in the previous assignments. To learn more
+  about why this is the case and to better understand the trade-offs associated with this approach, you should read the
+  Java documentation for the {\tt java.net.DatagramPacket}, {\tt java.net.InetAddress}, and {\tt
+  java.net.MulticastSocket} classes. In particular, you should investigate what it means for the {\tt DatagramPacket}
+  class to, according to the documentation, ``implement a connectionless packet delivery service''.  Finally, can you
+  draw a technical diagram that illustrates the general interaction between a client and a server, customized for these
+  two classes that perform multicast communication with sockets? Please see the course instructor if you have questions
+  about these issues.
+\end{sloppypar}
 
-\section*{Exploring Multicast Communication}
 
 
 
