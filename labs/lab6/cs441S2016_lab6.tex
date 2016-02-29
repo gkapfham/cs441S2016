@@ -8,22 +8,24 @@
 
 \section*{Introduction}
 
-There are certain situations in which it is not feasible to use a client-server based distributed system that uses
+There are certain situations in which it may not be best to use a client-server-based distributed system that uses
 unicasting for the exchange of messages. For instance, the need for an alternative to unicasting can arise when a single
 node in the distributed system needs to quickly communicate a message to many nodes. Unicasting may also be an
 unsuitable solution when a client is attempting to locate a server that migrates around a local-area network. This
 laboratory assignment will explore multicasting as an alternative to unicasting, giving students the opportunity to
 investigate the trade-offs of this alternative to ``point-to-point'' communication.  In addition to running a multicast
-system supporting communication between several nodes, you will write a short report, using either Markdown or the
-\LaTeX, that discusses the trade-offs associated with multicasting.
+system supporting communication between several nodes, you will write a short report, using either Markdown or \LaTeX,
+that discusses the trade-offs associated with multicasting.
 
 \section*{Review Your Textbook}
 
-Before starting this laboratory assignment, you and your partner should review and discuss the content in Chapters 1
-through 3 of your textbook. If one member of your partnership has questions about this content, then please resolve them
-before starting this laboratory assignment. Next, you should collaboratively examine the material in Section 4.1, paying
-particularly close attention to the technical digram in Figure 4-6 and the ten steps associated with performing a remote
-procedure call, as given on page 129 of your textbook. Please see the instructor if you have any questions.
+Before starting this laboratory assignment, you should review the content in Chapters 1 through 3 of your textbook. If
+you have a question about this content, then please resolve it before starting this laboratory assignment. Next, you
+should examine the content in Section 4.1 that discusses the protocols commonly used in distributed systems, paying
+particularly close attention to the material about connection-oriented and connectionless protocols. It is also
+important for you to study the content in Section 4.5 that talks about the various approaches to multicast
+communication. Students who are interested in reading a more advanced treatment of ways to achieve reliable multicasting
+are encouraged to read Section 8.4. Please see the instructor if you have any questions.
 
 \section*{Access the Course Repository}
 
