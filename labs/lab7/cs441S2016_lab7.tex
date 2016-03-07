@@ -41,7 +41,7 @@ have any questions.
 
 Since you configured your connection to the ``share'' repository for this course in a previous laboratory assignment,
 you should be able to change into the {\tt cs441S2016-share/} directory and type the ``{\tt git pull}'' command to gain
-access to the many Java classes needed to complete this assignment. Please recall that the source code that you receive
+access to the many Java classes needed to complete this assignment. Please recall that the source code that you received
 for this laboratory assignment is derived from the Java system that is available at
 \url{https://github.com/pothoven/simple-rmi}; students who would like to learn more about this system are encouraged to
 visit the referenced GitHub page.
@@ -54,14 +54,26 @@ file creates a distributed object-based system that is the closest to the one th
 meetings and thus is appropriate for supporting further learning and discussion during today's laboratory session.
 Please see the course instructor if you could not compile the system with {\tt ant}.
 
+Once you have compiled the system, you should go into the {\tt bin/} directory and see what bytecode files have been
+produced. Do you see any files that are specifically needed for a distributed system? If you look into the main
+directory of this system, you should also notice that it contains a {\tt Simple.properties} file. Before you run the
+next command, please make sure that this file is also placed in the {\tt bin/} directory. Now, you can type the command
+``{\tt ant jar}'' in your terminal window. At this point, you are ready to run the client and the server according to
+the commands that are provided in the documentation. What commands did you type? What output did they produce? Please
+ensure that you try all of the commands supported by this distributed object-based system.
 
+When you are using the ``upload'' functionality, you are advised to specify a name for the ``destination'' file.
+Additionally, you should add in timing code so that you can perform an experiment to measure the time overheads
+associated with performing uploads. Finally, you should review and comment all of the Java source code.  Can you
+determine the port used by the ``RMI registry'' that this system starts? Can you find the class that calls {\tt
+rebind}? What is the purpose of this method?
 
 \section*{Applications and Enhancements of Java RMI}
 
 Java RMI serves as the ``backbone'' for a wide variety of different types of distributed systems. Additionally, there
 are many ways in which researchers and practitioners have extended Java RMI so that it provides new features that are
-not a part of the standard distribution. As the final portion of this laboratory assignment, you should search the ACM
-Digital Library ---- available from \url{http://dl.acm.org/} --- and download and read two papers. After carefully
+not a part of the standard distribution. During the final portion of this laboratory assignment, you should search the
+ACM Digital Library ---- available from \url{http://dl.acm.org/} --- and download and read two papers. After carefully
 studying the papers, you should write a short one or two paragraph review of each paper that highlights its key
 contributions. Finally, your review of the paper should comment on how the implementation that you used in this
 assignment is similar to and different from the one presented in the paper.
@@ -81,11 +93,9 @@ please make sure that you share this repository with the instructor.
 
   \item Using both text and diagrams, a description of client-server communication with Java RMI.
 
-  \item A report that explicitly compares and contrasts multicast and unicast remote communication.
+  \item A document that summarizes two published papers that report on the use of Java RMI.
 
-  \item A document that summarizes the different types of multicasting systems used in production.
-
-  \item A paper that responds to the other questions that this assignment poses about multicasting.
+  \item A paper that responds to the other questions that this assignment poses about Java RMI.
 
   \item A reflection on the challenges that you encountered when completing this assignment.
 
