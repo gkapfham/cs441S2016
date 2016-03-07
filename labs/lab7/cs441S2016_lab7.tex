@@ -3,19 +3,28 @@
 \usepackage[compact]{titlesec}
 
 \begin{document}
-\MYTITLE{Laboratory Assignment Seven: Exploring the Trade-offs of Multicast Communication}
+\MYTITLE{Laboratory Assignment Seven: Understanding Remote Method Invocation in Java}
 \MYHEADERS{Laboratory Assignment Seven}{Due: March 14, 2016}
 
 \section*{Introduction}
 
-There are certain situations in which it may not be best to create a client-server-based distributed system that uses
-unicasting for the exchange of messages. For instance, the need for an alternative to unicasting can arise when a single
-node in the distributed system must quickly communicate a message to many nodes. Unicasting may also be an
-unsuitable solution when a client is attempting to locate a server that migrates around a local-area network. This
-laboratory assignment will explore multicasting as an alternative to unicasting, giving students the opportunity to
-investigate the trade-offs of this alternative to communicating in a ``point-to-point'' fashion.  In addition to running
-a multicast system supporting communication between several nodes, you will write a report, using either Markdown
-or \LaTeX, examining the trade-offs and applications of multicasting.
+% There are certain situations in which it may not be best to create a client-server-based distributed system that uses
+% unicasting for the exchange of messages. For instance, the need for an alternative to unicasting can arise when a single
+% node in the distributed system must quickly communicate a message to many nodes. Unicasting may also be an
+% unsuitable solution when a client is attempting to locate a server that migrates around a local-area network. This
+% laboratory assignment will explore multicasting as an alternative to unicasting, giving students the opportunity to
+% investigate the trade-offs of this alternative to communicating in a ``point-to-point'' fashion.  In addition to running
+% a multicast system supporting communication between several nodes, you will write a report, using either Markdown
+% or \LaTeX, examining the trade-offs and applications of multicasting.
+
+In the Java programming language, it is common to implement a distributed object-based system using the remote method
+invocation (RMI) classes. In this laboratory assignment, you will download and use a Java system that is derived from
+the example provided at \url{https://github.com/pothoven/simple-rmi}. Once you have correctly compiled and configured
+this system, you will run it and explore all of the features that it provides. Next, you will conduct an experiment to
+measure the response time associated with the file upload feature that the {\tt simple-rmi} system furnishes. Finally,
+you will add one new feature to the provided system. In addition to running these experiments and adding a new feature,
+you will write a report, using either Markdown or \LaTeX, that presents on your performance results and reflects on your
+implementation experiences.
 
 \section*{Review Your Textbook}
 
