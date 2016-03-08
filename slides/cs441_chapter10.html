@@ -225,7 +225,18 @@
 
         <section>
           <h1>Security Policy</h1>
-          <p class="fragment">
+          <pre>
+          grant codeBase "file:simple-client.jar" {
+              permission java.security.AllPermission;
+          };
+          grant codeBase "file:simple-server.jar" {
+              permission java.security.AllPermission;
+          };
+          </pre>
+        </section>
+
+        <section>
+          <h1>Security Policy</h1>
           <pre>
           grant {
                permission java.net.SocketPermission
@@ -239,8 +250,8 @@
                "showWindowWithoutWarningBanner";
               };
           </pre>
-          </p>
         </section>
+
 
       </div>
 
