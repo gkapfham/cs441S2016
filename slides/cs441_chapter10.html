@@ -191,6 +191,57 @@
           <h1><b class="orange">Registration and lookup</b></h1>
         </section>
 
+        <section>
+          <h1><b class="orange">Synchronize to support concurrency</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Lock on the side of the client or the server?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="green">What are the trade-offs of the two approaches?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="green">What method is adopted by Java RMI?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Distributed security</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Distributed security</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Separate policy from mechanism</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Security policy in Java RMI</b></h1>
+        </section>
+
+        <section>
+          <h1>Security Policy</h1>
+          <p class="fragment">
+          <pre>
+          grant {
+               permission java.net.SocketPermission
+               "*:1024-65535",
+               "connect,accept,resolve";
+               permission java.net.SocketPermission
+               "*:80", "connect";
+               permission java.awt.AWTPermission
+               "accessEventQueue";
+               permission java.awt.AWTPermission
+               "showWindowWithoutWarningBanner";
+              };
+          </pre>
+          </p>
+        </section>
+
       </div>
 
     </div>
