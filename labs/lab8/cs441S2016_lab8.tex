@@ -53,7 +53,8 @@ assignment, please make sure that you are always following the two main suggesti
 of the type of benchmark that you are either creating or running. When you are creating your own benchmark or running an
 existing tool to perform benchmarking, you should first think about the research question that you are attempting to
 answer. Then, you need to clearly state a hypothesis for this research question and, finally, define the
-metrics that will enable you to evaluate the hypothesis and respond to the question.
+metrics and experimentation protocol that will enable you to evaluate the hypothesis and respond to the question. Please
+see the course instructor if you have questions about this step.
 
 In addition to reading the paper published in {\em ACM Transactions on Storage}, you should study some of the many
 useful online resources that explain further how to rigorously conduct performance benchmarking. For instance, Brendan
@@ -66,6 +67,17 @@ please make sure that you read the article that Gregg published about active ben
   benchmark''!
 
 \section*{Create and Use Your Own File System Benchmark}
+
+Now that you have investigated and better understood some of the benefits and challenges associated with benchmarking
+local and distributed file systems, you are ready to create and use your own file system benchmark. Using the
+programming language of your choice, you should implement your own benchmark after following the preparatory steps
+outlined in the previous sections of this assignment sheet. For instance, before you start programming your benchmark,
+you should formulate a research question, state a hypothesis, define evaluation metric(s), and prepare a experimentation
+protocol. Then, you should create your benchmark and run it so that you can evaluate the performance characteristics of
+storing and retrieving data through the use of distributed and local file systems. Students who want to run their
+benchmark on a local disk should point it to the {\tt /tmp/} directory. Otherwise, if you want to store files in a NFS
+mount, you can store the files in your home directory. See the instructor with any questions about this step of the
+assignment.
 
 \section*{Judiciously Use a File System Benchmarking Tool}
 
