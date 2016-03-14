@@ -1,0 +1,119 @@
+\input{labspre.tex}
+
+\usepackage[compact]{titlesec}
+
+\begin{document}
+\MYTITLE{Laboratory Assignment Seven: Understanding Remote Method Invocation in Java}
+\MYHEADERS{Laboratory Assignment Seven}{Due: March 14, 2016}
+
+\section*{Introduction}
+
+% There are certain situations in which it may not be best to create a client-server-based distributed system that uses
+% unicasting for the exchange of messages. For instance, the need for an alternative to unicasting can arise when a single
+% node in the distributed system must quickly communicate a message to many nodes. Unicasting may also be an
+% unsuitable solution when a client is attempting to locate a server that migrates around a local-area network. This
+% laboratory assignment will explore multicasting as an alternative to unicasting, giving students the opportunity to
+% investigate the trade-offs of this alternative to communicating in a ``point-to-point'' fashion.  In addition to running
+% a multicast system supporting communication between several nodes, you will write a report, using either Markdown
+% or \LaTeX, examining the trade-offs and applications of multicasting.
+
+In the Java programming language, it is common to implement a distributed object-based system using the remote method
+invocation (RMI) classes. In this laboratory assignment, you will download and use a Java system that is derived from
+the example provided at \url{https://github.com/pothoven/simple-rmi}. Once you have correctly compiled and configured
+this system, you will run it and explore all of the features that it provides. Next, you will conduct an experiment to
+measure the response time associated with the file upload feature that the {\tt simple-rmi} system furnishes. Finally,
+you will add one new feature to the provided system. In addition to running these experiments and adding a new feature,
+you will write a report, using either Markdown or \LaTeX, that presents on your performance results and reflects on your
+implementation experiences.
+
+\section*{Review Your Textbook}
+
+Before starting this assignment, you should review Chapters 1 through 4 of your textbook. If you have a question about
+this content, then please resolve it before starting this laboratory assignment. Next, you should examine the material
+in Sections 10.1 and 10.2 that discusses the features commonly found in a distributed object-based system. Additionally,
+students should pay close attention to the paragraphs in Section 10.3 that focus on either remote method invocation in the Java
+programming language or the Java distributed-object model. Although it is not the emphasis of this assignment, students
+who want to learn about security protocols and how they are used in distributed object-based systems should study the
+content in Section 10.8 and the security policy file in the provided implementation.  Please see the instructor if you
+have any questions.
+
+\section*{Exploring Remote Method Invocation in Java}
+
+Since you configured your connection to the ``share'' repository for this course in a previous laboratory assignment,
+you should be able to change into the {\tt cs441S2016-share/} directory and type the ``{\tt git pull}'' command to gain
+access to the many Java classes needed to complete this assignment. Please recall that the source code that you received
+for this laboratory assignment is derived from the Java system that is available at
+\url{https://github.com/pothoven/simple-rmi}; students who would like to learn more about this system are encouraged to
+visit the referenced GitHub page.
+
+You will notice that this project furnishes a {\tt build.xml} file that is responsible for compiling the system and then
+preparing it for use through a Java command-line interface. If you would like to compile the system, then you need to
+type the command ``{\tt ant compile}'' in your terminal window. Please note that the deprecation message that you
+received after running this command is acceptable for this assignment; the current configuration of the {\tt build.xml}
+file creates a distributed object-based system that is the closest to the one that we have discussed in our past class
+meetings and thus is appropriate for supporting further learning and discussion during today's laboratory session.
+Please see the course instructor if you could not compile the system with {\tt ant}.
+
+Once you have compiled the system, you should go into the {\tt bin/} directory and see what bytecode files have been
+produced. Do you see any files that are specifically needed for a distributed system? If you look into the main
+directory of this system, you should also notice that it contains a {\tt Simple.properties} file. Before you run the
+next command, please make sure that this file is also placed in the {\tt bin/} directory. Now, you can type the command
+``{\tt ant jar}'' in your terminal window. At this point, you are ready to run the client and the server according to
+the commands that are provided in the documentation. What commands did you type? What output did they produce? Please
+ensure that you try all of the commands supported by this distributed object-based system.
+
+When you are using the ``upload'' functionality, you are advised to specify a name for the ``destination'' file.
+Additionally, you should add in timing code so that you can perform an experiment to measure the time overheads
+associated with performing uploads. Next, you should review and comment all of the provided Java source code.  Can you
+determine the port used by the ``RMI registry'' that this system starts? Can you find the class that calls {\tt rebind}?
+What is the purpose of this method? Finally, you should add one new feature to this distributed object-based system.
+
+\section*{Applications and Enhancements of Java RMI}
+
+Java RMI serves as the ``backbone'' for a wide variety of different types of distributed systems. Additionally, there
+are many ways in which researchers and practitioners have extended Java RMI so that it provides new features that are
+not a part of the standard distribution. During the final portion of this laboratory assignment, you should search the
+ACM Digital Library --- available from \url{http://dl.acm.org/} --- and download and read two papers. After carefully
+studying the papers, you should write a short one or two paragraph review of each paper that highlights its key
+contributions. Finally, your review of the paper should comment on how the implementation that you used in this
+assignment is similar to and different from the one presented in the paper.
+
+\section*{Summary of the Required Deliverables}
+
+This assignment invites you to submit printed and signed versions of these deliverables. All of these deliverables must
+also be in a {\tt cs441S2016-<your user name>} repository created for \mbox{this course}.
+
+\vspace*{-.1in}
+
+\begin{enumerate}
+  \itemsep 0em
+
+  \item The well-commented source code of all of the Java classes in the final distributed system.
+
+  \item Using both text and diagrams, a description of client-server communication with Java RMI.
+
+  \item A document that summarizes two published papers that report on the use of Java RMI.
+
+  \item A paper that responds to the other questions that this assignment poses about Java RMI.
+
+  \item A reflection on the challenges that you encountered when completing this assignment.
+
+\end{enumerate}
+
+\vspace*{-.1in}
+
+% With the exception of the provided source code, deliverables that are otherwise nearly identical to the work of others
+% will be taken as evidence of violating the \mbox{Honor Code}.
+
+In adherence to the Honor Code, students should complete this assignment on an individual basis. While it is appropriate
+for students in this class to have high-level conversations about the assignment, it is necessary to distinguish
+carefully between the student who discusses the principles underlying a problem with others and the student who produces
+assignments that are identical to, or merely variations on, someone else's work.  With the exception of the provided
+source code, deliverables that are otherwise nearly identical to the work of others will be taken as evidence of
+violating the \mbox{Honor Code}. This means that, for instance, all of the other comments, source code, data, and
+written reports should be the original work of the student completing this assignment.
+
+% Students who have questions about the Honor Code and how it applies to this laboratory assignment should schedule a
+% meeting with the course instructor before this assignment's due date.
+
+\end{document}
