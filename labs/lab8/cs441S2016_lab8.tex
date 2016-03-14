@@ -76,11 +76,45 @@ you should formulate a research question, state a hypothesis, define evaluation 
 protocol. Then, you should create your benchmark and run it so that you can evaluate the performance characteristics of
 storing and retrieving data through the use of distributed and local file systems. Students who want to run their
 benchmark on a local disk should point it to the {\tt /tmp/} directory. Otherwise, if you want to store files in a NFS
-mount, you can store the files in your home directory. See the instructor with any questions about this step of the
-assignment.
+mount, you can store the files in your home directory. Finally, students should classify the benchmark that they created
+according to the schema outlined by Traeger et al.\ in ``A Nine Year Study of File System and Storage Benchmarking''.
+Please see the instructor with any questions about this step of the assignment.
 
 \section*{Judiciously Use a File System Benchmarking Tool}
 
+Of course, there are a wide variety of file system benchmarking tools that have already been implemented and are
+suitable for comparing the performance of distributed and local file systems. Two noteworthy examples of tools are {\tt
+bonnie} and {\tt bonnie++}, the second of which is installed on our laboratory computers. This tool provides many
+parameters that make it possible to collect performance metrics about the performance of a file system. For instance,
+{\tt bonnie++} can help you to estimate the throughput, in KB/sec, of operations such as sequential input and output,
+random seeks, and sequential and random file creation. This tool also comes with a support program that allows you to
+format its output --- which is standardly presented as a comma-separate value (CSV) file --- in an easy-to-read table.
+For instance, here is one command that that specifies a computer has 2 GB of memory and that the program should use
+the {\tt /tmp/} file system to run a series of experiments with output eventually being formatted in an HTML-based table.
+
+\vspace*{-.1in}
+\begin{quote}
+  {\tt bonnie++ /tmp/test -r 2048 -u gkapfham | bon\_csv2html > ~/bonnietest.html}
+\end{quote}
+\vspace*{-.1in}
+
+In this final phase of the laboratory assignment, you should follow the procedure outlined in the previous sections of
+this document to learn more about the performance of distributed and local file systems. As you work on this part of the
+assignment, it is critically important to remember that the network file system in Alden Hall is a shared resource used
+by all of the students and faculty in the Department of Computer Science. While it may be tempting to running {\tt
+bonnie++} in many different configurations with the hope that some interesting results might ultimately emerge, students
+should avoid taking this approach when running on a distributed file system. This method will place too much load on our
+NFS servers and potentially prevent others from completing assignments in this and other classes --- in addition to
+yielding results that are likely incorrect and misleading.
+
+Instead, students should first learn how to use {\tt bonnie++} by running experiments on the {\tt /tmp/} directory that
+is stored on the local file system. Then, you should conduct a series of preliminary experiments --- after, of course,
+defining research questions and all of the other machinery needed to conduct a meaningful experiment --- while
+exclusively using the local disk. Before running experiments on the network file system, a student should use Slack to
+ensure that no other students are also running experiments for this assignment. Once it is clear that no other
+experiments are currently being performed, the student should use Slack to mark the start of a new campaign of
+experiments, conduct the necessary experiments, and then again use Slack to declare that all experiments are finished.
+Please see the instructor if you have questions about this procedure.
 
 \section*{Summary of the Required Deliverables}
 
@@ -92,13 +126,15 @@ also be in a {\tt cs441S2016-<your user name>} repository created for \mbox{this
 \begin{enumerate}
   \itemsep 0em
 
-  \item The well-commented source code of all of the Java classes in the final distributed system.
+  \item The well-commented source code of the source code for your own file system benchmark.
 
-  \item Using both text and diagrams, a description of client-server communication with Java RMI.
+  \item Using both text and diagrams, a description of all benchmarks used in your experiments.
 
-  \item A document that summarizes two published papers that report on the use of Java RMI.
+  \item A document that summarizes the published paper that reports storage system benchmarking.
 
-  \item A paper that responds to the other questions that this assignment poses about Java RMI.
+  \item A summary paper that explains the key features and parameters of the {\tt bonnie++} tool.
+
+  \item A report presents your experimentation framework and analyzes your benchmarking results.
 
   \item A reflection on the challenges that you encountered when completing this assignment.
 
