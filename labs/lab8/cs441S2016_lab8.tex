@@ -35,7 +35,7 @@ consistency, replication, fault tolerance, and security in distributed file syst
 
 The authors of the paper ``A Nine Year Study of File System and Storage Benchmarking'', published in {\em ACM
 Transactions on Storage}, make the following statement in the abstract of their paper: ``We found that most popular
-benchmarks are flawed and many research papers do not provide clear indication of true performance.'' To learn more
+benchmarks are flawed and many research papers do not provide a clear indication of true performance.'' To learn more
 about the claims made in this paper written by Traeger et al.\ please go to the ACM Digital Library and download its PDF
 and, to ensure that you can cite this paper in your final report, its \hologo{BibTeX} reference. Students should
 carefully read this entire paper before implementing and running all of their file system benchmarks; please see the
@@ -77,7 +77,7 @@ protocol. Then, you should create your benchmark and run it so that you can eval
 storing and retrieving data through the use of distributed and local file systems. Students who want to run their
 benchmark on a local disk should point it to the {\tt /tmp/} directory. Otherwise, if you want to store files in a NFS
 mount, you can store the files in your home directory. Finally, students should classify the benchmark that they created
-according to the schema outlined by Traeger et al.\ in ``A Nine Year Study of File System and Storage Benchmarking''.
+according to the scheme outlined by Traeger et al.\ in ``A Nine Year Study of File System and Storage Benchmarking''.
 Please see the instructor with any questions about this step of the assignment.
 
 \section*{Judiciously Use a File System Benchmarking Tool}
@@ -89,8 +89,8 @@ parameters that make it possible to collect performance metrics about the perfor
 {\tt bonnie++} can help you to estimate the throughput, in KB/sec, of operations such as sequential input and output,
 random seeks, and sequential and random file creation. This tool also comes with a support program that allows you to
 format its output --- which is standardly presented as a comma-separate value (CSV) file --- in an easy-to-read table.
-For instance, here is one command that that specifies a computer has 2 GB of memory and that the program should use
-the {\tt /tmp/} file system to run a series of experiments with output eventually being formatted in an HTML-based table.
+For instance, here is one command that specifies a computer has 2 GB of total memory and that the program should use the
+{\tt /tmp/} file system to run a series of experiments with output eventually being formatted in an HTML-based table.
 
 \vspace*{-.1in}
 \begin{quote}
@@ -101,7 +101,7 @@ the {\tt /tmp/} file system to run a series of experiments with output eventuall
 In this final phase of the laboratory assignment, you should follow the procedure outlined in the previous sections of
 this document to learn more about the performance of distributed and local file systems. As you work on this part of the
 assignment, it is critically important to remember that the network file system in Alden Hall is a shared resource used
-by all of the students and faculty in the Department of Computer Science. While it may be tempting to running {\tt
+by all of the students and faculty of the Department of Computer Science. While it may be tempting to run {\tt
 bonnie++} in many different configurations with the hope that some interesting results might ultimately emerge, students
 should avoid taking this approach when running on a distributed file system. This method will place too much load on our
 NFS servers and potentially prevent others from completing assignments in this and other classes --- in addition to
@@ -126,15 +126,15 @@ also be in a {\tt cs441S2016-<your user name>} repository created for \mbox{this
 \begin{enumerate}
   \itemsep 0em
 
-  \item The well-commented source code of the source code for your own file system benchmark.
+  \item The well-commented source code and output for your own file system benchmark.
 
   \item Using both text and diagrams, a description of all benchmarks used in your experiments.
 
-  \item A document that summarizes the published paper that reports storage system benchmarking.
+  \item A document that summarizes the published paper that explains storage system benchmarking.
 
   \item A summary paper that explains the key features and parameters of the {\tt bonnie++} tool.
 
-  \item A report presents your experimentation framework and analyzes your benchmarking results.
+  \item A detailed report presenting your experimentation framework and analyzing your results.
 
   \item A reflection on the challenges that you encountered when completing this assignment.
 
