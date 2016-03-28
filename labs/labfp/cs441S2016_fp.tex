@@ -60,8 +60,24 @@ feasibility of the proposed project.
 
   \item {\bf Distributed Heuristic Search}: You and your team will investigate the use of heuristic search techniques
     (e.g., hill climbing, simulated annealing, and genetic algorithms) and learn more about how they may incur high time
-    overheads. Then, you and your team members will design, implement, and empirically evaluate a distributed version of
-    one or more of these algorithms that solves a real-world problem.
+    overheads. Then, you and your team members will design, implement, and empirically evaluate a distributed (or,
+    parallel) version of one or more of these algorithms that solves a real-world problem. After implementing your
+    distributed heuristic search method, you should experimentally evaluate it and then report on the results.
+
+  \item {\bf Distributed Test Suite Execution}: You and your team will learn how to use unit testing frameworks such as
+    JUnit and TestNG. Then, with the understanding that many real-world test suites take a long time to run, you should
+    implement and empirically evaluate a distributed (or, parallel) test execution framework. Teams that are interested
+    in this project should read the blog posts ``Hard core multi-core with TestNG'' and ``More on multithreaded
+    topological sorting'' written by the creator of TestNG. Finally, teams selecting this project should be prepared to
+    either implement or identify and download large test suites suitable for use in the empirical study measuring the
+    performance of distributed test execution.
+
+  \item {\bf Distributed Data Analysis}: You and your team will learn how to use the data analysis libraries in the R
+    language for statistical computing and then implement and empirically evaluate the efficiency of a distributed data
+    analysis system. Teams that pick this project should learn more about how to perform data analysis in R using
+    packages like ``dplyr'' and then explore ways to make their code faster through parallelization and/or the use of
+    multiple computer nodes. If your team selects this project, please make sure that you can identify several
+    real-world data sets and ultimately import them into R for subsequent analysis.
 
   \item {\bf Remote Communication}: You and your team members will implement, test, document, evaluate, and
     demonstrate a complete software system that performs some type of remote communication.  Teams that select this
@@ -69,16 +85,18 @@ feasibility of the proposed project.
     a challenging problem.
 
   \item {\bf Student-Designed Project}: You and your team will develop an idea for your own project that focuses on
-    advanced topics in operating systems. After receiving the instructor's approval for your idea, you will complete the
-    project and report on your results.
+    advanced topics in distributed systems. After receiving the instructor's approval for your idea, you will complete
+    the project and report on your results. While it is acceptable for students to explore a topic that we already
+    investigated during a laboratory assignment, teams that take this route should clearly articulate how their proposed
+    project will yield a substantial extension over their prior work.
 
 \end{enumerate}
 
-
+\vspace*{-.05in}
 
 \section*{Final Project Deadlines}
 
-This assignment invites you to submit printed and signed versions of the following deliverables:
+% This assignment invites you to submit printed and signed versions of the following deliverables:
 
 \vspace*{-.05in}
 \begin{enumerate}
@@ -121,13 +139,36 @@ This assignment invites you to submit printed and signed versions of the followi
     available through a BitBucket repository.
 
 \end{enumerate}
-\vspace*{-.05in}
 
-In adherence to the honor code, students should complete this assignment while only collaborating with those students
-who are a part of their chosen team. While it is appropriate for students in this class to have high-level
-conversations about the assignment with non-team members, it is necessary to distinguish carefully between the team that
-discusses the principles underlying a problem with others and the team that produces an assignment that is identical to,
-or merely variations on, the work of someone not on the team.  As such, deliverables that are nearly identical to the
-work of others will be taken as evidence of violating the \mbox{Honor Code}.
+\vspace*{-.15in}
 
-  \end{document}
+\section*{Honor Code}
+
+The Academic Honor Program that governs the entire academic program at Allegheny College is described in the Allegheny
+Course Catalogue.  The Honor Program applies to all work that is submitted for academic credit or to meet non-credit
+requirements for graduation at Allegheny College.  All students who have enrolled in the College will work under the
+Honor Program.  Each student who has matriculated at the College has acknowledged the following pledge:
+
+\vspace*{-.1in}
+\begin{quote}
+I hereby recognize and pledge to fulfill my responsibilities, as defined in the Honor Code, and to maintain the
+integrity of both myself and the College community as a whole.
+\end{quote}
+\vspace*{-.1in}
+
+\noindent It is recognized that an important part of the learning process in any course, and particularly one in
+computer science, derives from thoughtful discussions with teachers and fellow students.  Such dialogue is encouraged.
+However, it is necessary to distinguish carefully between the team that discusses the principles underlying a problem
+with others and the teams that produces assignments that are identical to, or merely variations on, someone else's
+work.  While it is acceptable for teams in this class to discuss their programs, data sets, and reports with their
+classmates, deliverables that are nearly identical to the work of others will be taken as evidence of violating the
+\mbox{Honor Code}.
+
+% In adherence to the honor code, students should complete this assignment while only collaborating with those students
+% who are a part of their chosen team. While it is appropriate for students in this class to have high-level
+% conversations about the assignment with non-team members, it is necessary to distinguish carefully between the team that
+% discusses the principles underlying a problem with others and the team that produces an assignment that is identical to,
+% or merely variations on, the work of someone not on the team.  As such, deliverables that are nearly identical to the
+% work of others will be taken as evidence of violating the \mbox{Honor Code}.
+
+\end{document}
