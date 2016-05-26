@@ -25,25 +25,25 @@ teaching efforts?
 You can type the following command if you want to clone this repository:
 
 ```shell
-git clone https://github.com/gkapfham/cs111S2016.git
+git clone https://github.com/gkapfham/cs441S2016.git
 ```
 
 Then, if you want to compile the LaTeX document to a PDF, you should type the following commands. In this example, I
 show how to compile the syllabus for the course.
 
 ```shell
-cd cs111S2016
+cd cs441S2016
 cd syllabus
-pdflatex cs111S2016_syllabus.tex
+pdflatex cs441S2016_syllabus.tex
 ```
 
 If you want to view the slides, then you should type the following commands. In this example, I show how to view the
 slides for the first chapter of the textbook.
 
 ```shell
-cd cs111S2016
+cd cs441S2016
 cd slides
-chromium-browser cs111_chapter1.html
+chromium-browser cs441_chapter1.html
 ```
 
 Please note that the LaTeX documents have been compiled on an Ubuntu 15.04 workstation running a very recent version of
