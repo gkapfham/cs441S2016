@@ -6,7 +6,11 @@ Kapfhammer](http://www.cs.allegheny.edu/sites/gkapfham) in the [Department of Co
 Science](http://www.cs.allegheny.edu) at [Allegheny College](http://www.allegheny.edu), the course has the following
 description:
 
-
+> An examination of the principles and paradigms associated with the design, implementation, and analysis of distributed
+> systems. Topics include the characterization of distributed system models, remote communication, distributed scheduling,
+> synchronization and mutual exclusion, naming and time, consistency and replication, and fault tolerance. Selected
+> distributed system development environments are discussed in the context of the above topics. One laboratory per week.
+> Prerequisites: CMPSC 280 or CMPSC 440 or permission of the instructor.
 
 The source code of the LaTeX documents uses a custom LaTeX style file and several other packages that are normally
 standard with a modern LaTeX distribution such a TeXLive 2015. All of the slides are programmed with the
